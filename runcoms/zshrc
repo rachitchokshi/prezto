@@ -11,3 +11,14 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+alias go_xrd_dev='ssh -i ~/.ssh/automation.key centos@10.233.140.199'
+
+# prompt theme
+  autoload -Uz promptinit
+  promptinit
+  prompt pure
+
+# Binding Mac keys
+bindkey '^[^[[D' backward-word
+bindkey '^[^[[C' forward-word
+alias config='/usr/bin/git --git-dir=/Users/rchokshi/.cfg/ --work-tree=/Users/rchokshi'

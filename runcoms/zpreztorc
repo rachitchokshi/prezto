@@ -38,6 +38,7 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
+  'contrib-prompt' \
   'prompt'
 
 #
@@ -61,6 +62,10 @@ zstyle ':prezto:load' pmodule \
 
 # Set the key mapping style to 'emacs' or 'vi'.
 zstyle ':prezto:module:editor' key-bindings 'emacs'
+
+# set prompt path color
+zstyle ':prompt:pure' pwd-length 'short'
+zstyle ':prompt:pure:path' color 'magenta'
 
 # Auto convert .... to ../..
 # zstyle ':prezto:module:editor' dot-expansion 'yes'
